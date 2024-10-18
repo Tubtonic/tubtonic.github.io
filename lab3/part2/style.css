@@ -4,8 +4,30 @@ File: style.css
 Date: October 16, 2024
 style.css for assignment 3 part 2
 */
+
 html {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
   
-  /* Your CSS below here */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  div {
+    width: 200px; /* Reasonable width */
+    height: 200px; /* Reasonable height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* rems for font size */
+    font-size: 1.125rem; /* 1rem = 16px; 18/16 = 1.125rem */
+  
+    
+  }
+  
