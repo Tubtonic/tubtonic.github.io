@@ -8,46 +8,78 @@ style.css for assignment 3 part 3
 * {
     box-sizing: border-box;
   }
-  /* Applies the Roboto font globally */
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
     line-height: 1.6;
     letter-spacing: 0.5px;
     word-spacing: 1px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    color: #333;
+    min-width: 1000px;
+    max-width: 1400px;
   }
   
-  /* Styles for heading */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700; /* Bold weight */
-    letter-spacing: 1.2px;
-    text-align: center;
+  /* Flexbox for content layout */
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between; /* Ensure aside is aligned to the right */
+    margin: 20px 0;
   }
+  
+  section {
+    width: 70%; /* Ensure section takes up 70% of space */
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  aside {
+    width: 25%; /* Ensure aside takes up 25% of space */
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header and footer styling */
+  header, footer {
+    background-color: #6699cc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer {
+    border-top: 5px solid #a66;
+  }
+  
+  /* Heading styles */
+  h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+  }
+  
   h1 {
     font-size: 3rem; /* 30px */
   }
+  
   h2 {
     font-size: 2.5rem; /* 25px */
   }
-  h3 {
-    font-size: 2rem; /* 20px */
-  }
-  /* Body text section */
+  
+  /* General text styles */
   p {
     font-size: 1.6rem; /* 16px */
-    font-weight: 400; /* Regular weight for body text */
-    letter-spacing: 0.5px;
     line-height: 1.8;
   }
   
   section p:first-of-type {
-    text-indent: 20px; /* Indent the paragraph after the heading */
+    text-indent: 20px; /* Indent first paragraph after heading */
   }
   
+  /* Link styles */
   a {
     color: #a66;
     text-decoration: underline;
@@ -64,13 +96,14 @@ body {
   }
   
   a[href^="http"]:after {
-    content: ' 🔗'; /* Icon for external link*/
+    content: ' 🔗'; /* External link icon */
   }
   
   a:focus {
-    outline: none; /* Removes the focus outline */
+    outline: none; /* Remove focus outline */
   }
-    
+  
+  /* List styles */
   ul, ol {
     margin-top: 1.6rem;
     margin-bottom: 1.6rem;
@@ -86,32 +119,27 @@ body {
     list-style-type: square;
   }
   
+  /* Navigation styling */
   nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    background-color: #444;
   }
   
   nav ul li {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   
   nav ul li a {
-    color: white;
+    color: #444;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px;
     display: block;
-    background-color: #555;
+    background-color: #eee;
+    margin-bottom: 5px;
   }
   
   nav ul li a:hover {
-    background-color: #666;
+    background-color: #ccc;
   }
   
-  nav ul li a:active {
-    background-color: #ff6600;
-    font-weight: bold;
-    color: white;
-  }
   
