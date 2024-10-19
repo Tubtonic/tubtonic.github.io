@@ -8,6 +8,29 @@ style.css for assignment 3 part 3
 * {
     box-sizing: border-box;
   }
+
+  a {
+    color: #a66;
+    text-decoration: underline;
+  }
+  
+  a:hover, a:focus {
+    text-decoration: none;
+    color: #884444;
+  }
+  
+  a:active {
+    color: #ff6600;
+    font-weight: bold;
+  }
+  
+  a[href^="http"]:after {
+    content: ' 🔗'; /* Icon for external link*/
+  }
+  
+  a:focus {
+    outline: none; /* Removes the focus outline */
+  }
     
   ul, ol {
     margin-top: 1.6rem;
