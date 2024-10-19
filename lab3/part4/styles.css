@@ -51,7 +51,25 @@ body {
     text-decoration: none;
     padding: .5em 1em;
   }
-  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;  /* Makes it responsive for smaller screens */
+    gap: 20px;
+}
+
+  article {
+    flex: 3;
+  }
+
+  article img.feature {
+    float: left;  
+    margin-right: 20px;  
+    width: 200px;
+  }
+
+  aside {
+    flex: 1;
+  }
   .photos {
     list-style: none;
     margin: 0;
