@@ -8,7 +8,7 @@ style.css for assignment 3 part 3
 * {
     box-sizing: border-box;
   }
-  
+    
   body {
     margin: 0 auto;
     min-width: 1000px;
@@ -71,5 +71,32 @@ style.css for assignment 3 part 3
   footer {
     border-top: 5px solid #336699;
   }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #444;
+  }
   
-  /* WRITE YOUR CODE BELOW HERE */
+  nav ul li {
+    margin-bottom: 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    background-color: #555;
+  }
+  
+  nav ul li a:hover {
+    background-color: #666;
+  }
+  
+  nav ul li a:active {
+    background-color: #ff6600;
+    font-weight: bold;
+    color: white;
+  }
+  
