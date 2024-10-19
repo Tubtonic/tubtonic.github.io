@@ -8,7 +8,46 @@ style.css for assignment 3 part 3
 * {
     box-sizing: border-box;
   }
-
+  /* Applies the Roboto font globally */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* Styles for heading */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Bold weight */
+    letter-spacing: 1.2px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 3rem; /* 30px */
+  }
+  h2 {
+    font-size: 2.5rem; /* 25px */
+  }
+  h3 {
+    font-size: 2rem; /* 20px */
+  }
+  /* Body text section */
+  p {
+    font-size: 1.6rem; /* 16px */
+    font-weight: 400; /* Regular weight for body text */
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+  }
+  
+  section p:first-of-type {
+    text-indent: 20px; /* Indent the paragraph after the heading */
+  }
+  
   a {
     color: #a66;
     text-decoration: underline;
