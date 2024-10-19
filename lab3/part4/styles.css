@@ -86,3 +86,13 @@ body {
   .feature {
       width: 200px;
   }
+  @media (max-width: 768px) {
+    .grid {
+        flex-direction: column;
+    }
+    
+    article img.feature {
+        float: none; 
+        margin: 0 auto 20px; 
+    }
+  }
