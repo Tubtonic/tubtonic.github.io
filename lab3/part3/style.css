@@ -8,10 +8,11 @@ style.css for assignment 3 part 3
 * {
     box-sizing: border-box;
   }
-body {
+  
+  body {
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
-    line-height: 1.6;
+    line-height: 1.8;
     letter-spacing: 0.5px;
     word-spacing: 1px;
     margin: 0 auto;
@@ -20,40 +21,6 @@ body {
     max-width: 1400px;
   }
   
-  /* Flexbox for content layout */
-  .content-wrapper {
-    display: flex;
-    justify-content: space-between; /* Ensure aside is aligned to the right */
-    margin: 20px 0;
-  }
-  
-  section {
-    width: 70%; /* Ensure section takes up 70% of space */
-    background-color: #f9f9f9;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  aside {
-    width: 25%; /* Ensure aside takes up 25% of space */
-    background-color: #f4f4f4;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Header and footer styling */
-  header, footer {
-    background-color: #6699cc;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  footer {
-    border-top: 5px solid #a66;
-  }
-  
-  /* Heading styles */
   h1, h2 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -62,32 +29,36 @@ body {
   }
   
   h1 {
-    font-size: 3rem; /* 30px */
+    font-size: 3rem;
   }
   
   h2 {
-    font-size: 2.5rem; /* 25px */
+    font-size: 2.5rem;
   }
   
-  /* General text styles */
   p {
-    font-size: 1.6rem; /* 16px */
+    font-size: 1.6rem;
     line-height: 1.8;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
   }
   
   section p:first-of-type {
-    text-indent: 20px; /* Indent first paragraph after heading */
+    text-indent: 20px;
   }
   
-  /* Link styles */
   a {
     color: #a66;
     text-decoration: underline;
   }
   
+  a:visited {
+    color: #884444;
+  }
+  
   a:hover, a:focus {
     text-decoration: none;
-    color: #884444;
+    color: #cc9999;
   }
   
   a:active {
@@ -96,22 +67,21 @@ body {
   }
   
   a[href^="http"]:after {
-    content: ' 🔗'; /* External link icon */
+    content: ' 🔗';
   }
   
   a:focus {
-    outline: none; /* Remove focus outline */
+    outline: none;
   }
   
-  /* List styles */
   ul, ol {
     margin-top: 1.6rem;
     margin-bottom: 1.6rem;
-    line-height: 1.6;
+    line-height: 1.8;
   }
   
   li {
-    line-height: 1.6;
+    line-height: 1.8;
     padding-left: 10px;
   }
   
@@ -119,10 +89,12 @@ body {
     list-style-type: square;
   }
   
-  /* Navigation styling */
   nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
   }
   
   nav ul li {
@@ -140,6 +112,38 @@ body {
   
   nav ul li a:hover {
     background-color: #ccc;
+    text-decoration: none;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  section {
+    width: 70%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  aside {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  header, footer {
+    background-color: #6699cc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer {
+    border-top: 5px solid #a66;
   }
   
   
