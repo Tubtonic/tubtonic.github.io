@@ -55,14 +55,21 @@ style.css for assignment 3 part 3
   }
   
   header, section, aside, nav, footer {
-    padding: 20px;
+    padding: 25px;
   }
   
   /* header and footer */
   
-  header, footer {
-    border-top: 5px solid #a66;
-    border-bottom: 5px solid #a66;
+  header {
+    background-color: #6699cc;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    border-bottom: 5px solid #336699;
+  }
+  
+  footer {
+    border-top: 5px solid #336699;
   }
   
   /* WRITE YOUR CODE BELOW HERE */
