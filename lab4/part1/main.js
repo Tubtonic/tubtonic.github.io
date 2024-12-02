@@ -25,6 +25,11 @@ function result() {
   const yItem = randomValueFromArray(insertY);
   const zItem = randomValueFromArray(insertZ);
 
+  // replaces placeholders in newStory
+  newStory = newStory.replaceAll(':insertx:', xItem);
+  newStory = newStory.replace(':inserty:', yItem);
+  newStory = newStory.replace(':insertz:', zItem);
+
   if (customName.value !== '') {
     const name = customName.value;
   }
@@ -34,7 +39,6 @@ function result() {
     const temperature = Math.round(94);
   }
 
-  // Placeholders
-  story.textContent = ;
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
