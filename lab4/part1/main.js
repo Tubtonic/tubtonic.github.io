@@ -1,3 +1,8 @@
+//Name: Toby Pike
+//File: main.js
+//Date: November 20, 2024
+//main.js for assignment 4 part 1
+
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
@@ -35,9 +40,12 @@ function result() {
     newStory = newStory.replace('Bob', name);
   }
 
+  //Conversion
   if (document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature = Math.round(94);
+    const weight = `${Math.round(300 * 0.071429)} stone`;
+    const temperature = `${Math.round((94 - 32) * (5 / 9))} centigrade`;
+    newStory = newStory.replace('300 pounds', weight);
+    newStory = newStory.replace('94 fahrenheit', temperature);
   }
 
   story.textContent = newStory;
