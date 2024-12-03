@@ -16,9 +16,13 @@ const altText = ['Description for pic1', 'Description for pic2', 'Description fo
 /* Loop through the images */
 for (let image = 0; image < imageFilenames.length; image++) {
     const newImage = document.createElement('img');
-    newImage.setAttribute('src', `images/${imageFilenames[i]}`);
-    newImage.setAttribute('alt', altText[i]);
-
+    newImage.setAttribute('src', `images/${imageFilenames[image]}`);
+    newImage.setAttribute('alt', altText[image]);
+/* Adds event listener to change image when it is clicked */
+    newImage.addEventListener('click', () => {
+    displayedImage.setAttribute('src', `images/${imageFilenames[image]}`);
+    displayedImage.setAttribute('alt', altText[image]);
+  });
 thumbBar.appendChild(newImage);
 }
 /* Wiring up the Darken/Lighten button */
