@@ -80,6 +80,34 @@ class Ball extends Shape{
   }
 }
 
+// Evil Shape
+class EvilCircle extends Shape{
+  constructor(x, y) {
+    super(x, y, 20, 20);
+    this.color = "white"; 
+    this.size = 10; 
+    this.exists = true;
+    window.addEventListener("keydown", (e) => {
+      switch (e.key) {
+        case "a":
+          this.x -= this.velX;
+          break;
+        case "d":
+          this.x += this.velX;
+          break;
+        case "w":
+          this.y -= this.velY;
+          break;
+        case "s":
+          this.y += this.velY;
+          break;
+      }
+    });
+  }
+}
+
+
+
 const testBall = new Ball(50, 100, 4, 4, "blue", 10);
 testBall.x;
 testBall.size;
