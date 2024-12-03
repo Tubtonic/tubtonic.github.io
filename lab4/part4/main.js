@@ -103,6 +103,7 @@ class EvilCircle extends Shape{
           break;
       }
     });
+  }
     draw() {
       ctx.beginPath(); 
       ctx.strokeStyle = this.color; 
@@ -126,7 +127,6 @@ class EvilCircle extends Shape{
     }
     
   }
-}
 
 
 
