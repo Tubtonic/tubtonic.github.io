@@ -111,6 +111,7 @@ class EvilCircle extends Shape{
       ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI); 
       ctx.stroke(); 
     }
+    
     checkBounds() {
       if (this.x + this.size >= width) {
         this.x = width - this.size; 
@@ -141,11 +142,12 @@ class EvilCircle extends Shape{
 
 
 
-const testBall = new Ball(50, 100, 4, 4, "blue", 10);
-testBall.x;
-testBall.size;
-testBall.color;
-testBall.draw();
+//const testBall = new Ball(50, 100, 4, 4, "blue", 10);
+//testBall.x;
+//testBall.size;
+//testBall.color;
+//testBall.draw();
+
 
 const balls = [];
 
@@ -163,6 +165,15 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  ballCount++;
+  updateBallCount();
+}
+
+const evilCircle = new EvilCircle(width / 2, height / 2);
+const ballCountDisplay = document.querySelector("#ballCount");
+let ballCount = 0;
+function updateBallCount() {
+  ballCountDisplay.textContent = ballCount;
 }
 
 function loop() {
@@ -179,9 +190,11 @@ function loop() {
   }
 
   // Calls the EvilCircle methods
-  EvilCircle.draw();
-  EvilCircle.checkBounds();
-  EvilCircle.collisionDetect();
+  evilCircle.draw();
+  evilCircle.checkBounds();
+  evilCircle.collisionDetect();
+
+  updateBallCount();
 
   requestAnimationFrame(loop);
 }
