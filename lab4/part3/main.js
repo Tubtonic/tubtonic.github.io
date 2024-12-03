@@ -1,3 +1,9 @@
+//Name: Toby Pike
+//File: main.js
+//Date: November 27, 2024
+//main.js for assignment 4 part 3
+
+
 // setup canvas
 
 const canvas = document.querySelector("canvas");
