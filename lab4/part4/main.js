@@ -169,11 +169,19 @@ function loop() {
   ctx.fillStyle = "rgb(0 0 0 / 25%)";
   ctx.fillRect(0, 0, width, height);
 
+  // Loop balls array
   for (const ball of balls) {
-    ball.draw();
-    ball.update();
-    ball.collisionDetect();
+    if (ball.exists) { 
+      ball.draw();
+      ball.update();
+      ball.collisionDetect();
+    }
   }
+
+  // Calls the EvilCircle methods
+  EvilCircle.draw();
+  EvilCircle.checkBounds();
+  EvilCircle.collisionDetect();
 
   requestAnimationFrame(loop);
 }
