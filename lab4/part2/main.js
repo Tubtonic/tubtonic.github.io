@@ -12,7 +12,13 @@ const overlay = document.querySelector('.overlay');
 /* Declares the array of image file names */
 const imageFilenames = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
 /* Declares the alternative text for each image file */
-const altText = ['Description for pic1', 'Description for pic2', 'Description for pic3', 'Description for pic4', 'Description for pic5'];
+const altText = [
+    'Closeup of a blue human eye',
+    'Photo of a tropical beach during sunset',
+    'A beautiful mountain range with snow peaks',
+    'A cat sitting on a windowsill',
+    'A bouquet of colorful flowers',
+  ];
 /* Loop through the images */
 for (let image = 0; image < imageFilenames.length; image++) {
     const newImage = document.createElement('img');
