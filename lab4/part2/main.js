@@ -26,3 +26,12 @@ for (let image = 0; image < imageFilenames.length; image++) {
 thumbBar.appendChild(newImage);
 }
 /* Wiring up the Darken/Lighten button */
+btn.addEventListener('click', () => {
+    if (btn.textContent === 'Darken') {
+      overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+      btn.textContent = 'Lighten';
+    } else {
+      overlay.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+      btn.textContent = 'Darken';
+    }
+  });
